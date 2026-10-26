@@ -1,5 +1,8 @@
 # Solar MCP
 
+This MCP server is hosted on Render and is accessible at the following address:
+- [solar-mcp.onrender.com](https://solar-mcp.onrender.com)
+
 ## Description
 
 Solar MCP enables you to retrieve information about the UV index and ozone levels for a given location. It's designed to provide accurate and timely environmental data for developers and researchers.
