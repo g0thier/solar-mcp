@@ -1,4 +1,3 @@
-
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "solar-mcp",
@@ -41,7 +40,8 @@
         "brandColor": "#ebbe10",
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png"
-      }
+      },
+      "requires_local_executor": false
     }
   }
 }
