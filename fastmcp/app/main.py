@@ -9,8 +9,8 @@ import custom
 
 class UVInfo(BaseModel):
     date: int
-    uv_index: float
-    ozone: float
+    uv_index: float = Field(description="Clear-sky UV index forecast.")
+    ozone: float = Field(description="Total ozone column in Dobson units (DU).")
 
 class UVResponse(BaseModel):
     longitude: float
@@ -20,7 +20,7 @@ class UVResponse(BaseModel):
 # Initialize FastMCP server
 mcp = FastMCP(
     name="🔆 Solar MCP",
-    instructions="This API provides the UV index and ozone concentration for your location.",
+    instructions="TEMIS forecasts of clear-sky UV index and total ozone in DU for your location.",
     version="1.0.0",
 )
 
@@ -48,7 +48,7 @@ def get_uv_week(
     latitude: Annotated[float, Field(description="Latitude of the location.")] = 46.220473615,
 ) -> UVResponse:
     """
-    Retrieve UV index data for a week for a specified location.
+    Retrieve weekly TEMIS forecasts: clear-sky UV index and total ozone column in Dobson units (DU).
 
     Args:
         longitude (float): The longitude of the location.
