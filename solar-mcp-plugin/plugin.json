@@ -1,0 +1,47 @@
+
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "solar-mcp",
+  "version": "0.1.0",
+  "description": "Consulte les indices UV et les concentrations d'ozone prévus selon les coordonnées géographiques via Solar MCP.",
+  "author": {
+    "name": "Gauthier Rammault",
+    "url": "https://github.com/g0thier"
+  },
+  "homepage": "https://github.com/g0thier/solar-mcp",
+  "repository": "https://github.com/g0thier/solar-mcp",
+  "keywords": [
+    "uv",
+    "ozone",
+    "sun",
+    "forecast",
+    "weather",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Solar MCP",
+        "shortDescription": "Prévisions UV et ozone",
+        "longDescription": "Solar MCP permet de consulter les prévisions journalières d'indice UV et de concentration d'ozone pour n'importe quelle localisation géographique. Comparez plusieurs villes, découvrez l'évolution des UV sur plusieurs jours et anticipez votre exposition au soleil grâce aux données fournies par un serveur MCP hébergé sur Render.",
+        "developerName": "Gauthier Rammault",
+        "category": "Data & Analytics",
+        "capabilities": [
+          "Read"
+        ],
+        "websiteURL": "https://github.com/g0thier/solar-mcp",
+        "supportURL": "https://github.com/g0thier/solar-mcp/issues",
+        "privacyPolicyURL": "https://github.com/g0thier/solar-mcp/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/g0thier/solar-mcp/blob/main/TERMS.md",
+        "defaultPrompt": [
+          "Compare les indices UV de Madrid, Londres et Mahé aujourd'hui.",
+          "Quel est l'indice UV prévu à Genève pour les sept prochains jours ?",
+          "Donne-moi les prévisions UV et ozone à Paris cette semaine."
+        ],
+        "brandColor": "#ebbe10",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}
