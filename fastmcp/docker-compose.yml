@@ -1,0 +1,12 @@
+services:
+  solar-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: solar-mcp:v1.0.0
+    container_name: solar-mcp
+    volumes:
+      - ./data:/app/data
+    working_dir: /app
+    ports:
+      - "80:80"

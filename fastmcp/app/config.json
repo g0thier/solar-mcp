@@ -1,0 +1,22 @@
+{
+    "timeout": 1800,
+    "title": "⚡️ Solar MCP",
+    "summary": "⚡️ Solar MCP: Template",
+    "description": "## ⚡️ Solar MCP: Template.\n* This API is a quick start.",
+    "version": "0.0.1",
+    "contact": {
+        "name": "Gauthier Rammault",
+        "url": "https://www.linkedin.com/in/gauthier-rammault/"
+    },
+    "terms_of_service": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "openapi_tags": [
+        {
+            "name": "Home",
+            "description": "⚡️ Solar MCP homepage."
+        },
+        {
+            "name": "ascii",
+            "description": "⚡️ Solar MCP with POST or GET method."
+        }
+    ]
+}
