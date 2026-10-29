@@ -34,7 +34,12 @@ Solar MCP is based on the previous project [Solaire API](https://github.com/g0th
 
 ## 🎯 Objective of the project
 
-The main goal of this project is to provide an easy-to-use API that allows users to access UV index and ozone level data based on geographic coordinates. This can be particularly useful for developers building applications related to weather, health, or environmental monitoring. By offering a simple interface to retrieve this information, we aim to facilitate the integration of environmental data into various applications and services.
+The main goal of this project is to provide an easy-to-use Model Context Protocol (MCP) server that gives MCP clients and AI assistants access to weekly TEMIS forecasts for a location specified by longitude and latitude. Clients connect to `/mcp` and call the `get_uv_week` tool to retrieve the requested coordinates and a list of dated forecasts containing:
+
+- **Clear-sky UV index** (`uv_index`): the forecast UV index under clear-sky conditions.
+- **Total ozone column** (`ozone`): the total amount of ozone in the atmospheric column, expressed in Dobson units (DU).
+
+These data support applications and workflows related to weather, UV exposure, and environmental monitoring. The data source is TEMIS.
 
 ## 👥 Target audience 
 
